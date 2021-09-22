@@ -1,7 +1,7 @@
 build:
-	GOOS=linux GOARCH=amd64 go build -ldflags="-X main.Version=0.0.1 -X main.TwitterApiKey= -X main.TwitterSecret= -X main.BotToken=" -o bin/instalker main.go
-	GOOS=windows GOARCH=386 go build -ldflags="-X main.Version=0.0.1 -X main.TwitterApiKey= -X main.TwitterSecret= -X main.BotToken=" -o bin/instalker_win64.exe main.go
-	GOOS=darwin GOARCH=arm64 go build -ldflags="-X main.Version=0.0.1 -X main.TwitterApiKey= -X main.TwitterSecret= -X main.BotToken=" -o bin/instalker_macos main.go
+	GOOS=linux GOARCH=amd64 go build -ldflags="-X main.Version=0.0.1 -X main.TwitterApiKey= -X main.TwitterSecret= -X main.BotToken=" -o bin/tinabot main.go
+	GOOS=windows GOARCH=386 go build -ldflags="-X main.Version=0.0.1 -X main.TwitterApiKey= -X main.TwitterSecret= -X main.BotToken=" -o bin/tinabot_win64.exe main.go
+	GOOS=darwin GOARCH=arm64 go build -ldflags="-X main.Version=0.0.1 -X main.TwitterApiKey= -X main.TwitterSecret= -X main.BotToken=" -o bin/tinabot_macos main.go
 
 run:
 	go run -ldflags="-X main.Version=0.0.1 -X main.TwitterApiKey= -X main.TwitterSecret= -X main.BotToken=" main.go
